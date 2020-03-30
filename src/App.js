@@ -1,12 +1,10 @@
-import React from 'react'
-import Home from './js/pages/home/index'
+import React from "react";
+import Home from "./js/pages/home/index";
 
-import './scss/general.scss'
+import "Styles/general.scss";
 
-function App(){
-    return (
-        <Home />
-    )
+function App() {
+  return <Home />;
 }
 
-export default App
+export default App;

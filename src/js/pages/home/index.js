@@ -1,24 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import Header from '../../components/header/index'
-import api from '../../../services/api';
+import React, { useState, useEffect } from "react";
+import Header from "../../components/header/index";
+import BookList from "Components/BookList/index";
 
-function Home(){
-    
-    var loadBooks = () => {
-        const url = "?q=flowers&key=AIzaSyCY5qNAeB5X5j_4GrgNCF5qfB-431zfVS0";
-        api.get(url)
-            .then((response) => {
-                console.log(response)
-            })
-    }
-
-    useEffect(() => {
-        loadBooks();
-    }, [])
-
-    return(
-            <Header />  
-    )
+function Home() {
+  return (
+    <div>
+      <Header />
+      <BookList />
+    </div>
+  );
 }
 
-export default Home
+export default Home;
